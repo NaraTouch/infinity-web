@@ -42,7 +42,6 @@
 								'type' => 'submit',
 								'class' => 'nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block',
 							]); ?>
-							<!--<a href="#" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block">Sign In</a>-->
 						</div>
 						<div class="col-md-6">
 							<div class="mnt-5">
