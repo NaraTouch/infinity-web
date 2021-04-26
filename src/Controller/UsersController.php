@@ -24,9 +24,11 @@ class UsersController extends AppController
 			'unauthorizedRedirect' => $this->referer()
 		]);
 	}
+
 	public function beforeFilter(EventInterface $event)
 	{
 		parent::beforeFilter($event);
+		
 	}
 
 	public function isAuthorized($user)
@@ -57,7 +59,7 @@ class UsersController extends AppController
 			}
 		}
 	}
-	
+
 	public function logout()
 	{
 		$this->deleteSession('Auth.User');

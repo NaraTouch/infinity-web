@@ -14,7 +14,7 @@ class UserComponent extends Component
 
 	public function login($request = [])
 	{
-		$url = $this->api_url.'/user/login';
+		$url = $this->api_url.'/users/login';
 		$http_method = 'POST';
 		return $this->openUrl($url, $request, $http_method);
 	}
