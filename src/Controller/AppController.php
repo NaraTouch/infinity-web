@@ -25,18 +25,19 @@ class AppController extends Controller
 	
 		parent::beforeFilter($event);
 		$this->Auth->allow();
-		$check_auth = $this->checkFile($this->authorization);
-		if ($check_auth) {
-			$this->webLoader();
-		} else {
-			$this->redirect([
-				'controller' => 'Settings',
-				'action' => 'requestAuth',
-				$this->authorization
-			]);
-		}
+		$this->webLoader();
+		
+//		$check_auth = $this->checkFile($this->authorization);
+//		if ($check_auth) {
+//			$this->webLoader();
+//		} else {
+////			$this->redirect([
+////				'controller' => 'Setting',
+////				'action' => 'index'
+////			]);
+//		}
 	}
-	
+
 	public function getSession()
 	{
 		return $this->request->getSession();
@@ -56,10 +57,19 @@ class AppController extends Controller
 	{
 		return $this->getSession()->delete($key);
 	}
-	
+
 	public function webLoader()
 	{
-		dump('webLoader');
+		$controller = strtolower($this->request->getParam('controller'));
+		$action = strtolower($this->request->getParam('action'));
+		if ($controller != 'setting' && $action != 'auth') {
+			$check_auth = $this->checkFile($this->authorization);
+			if (!$check_auth) {
+				return $this->redirect(['controller' => 'Setting', 'action' => 'auth']);
+			} else {
+				return $this->redirect(['controller' => 'Setting', 'action' => 'setting']);
+			}
+		}
 	}
 	
 	// Default Directory

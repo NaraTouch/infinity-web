@@ -5,7 +5,6 @@ $routes->setRouteClass(DashedRoute::class);
 
 $routes->scope('/', function (RouteBuilder $builder) {
 	$builder->connect('/', ['controller' => 'Home', 'action' => 'index']);
-	$builder->connect('/login', ['controller' => 'Users', 'action' => 'login']);
-	$builder->connect('/pages/*', 'Pages::display');
+	
 	$builder->fallbacks();
 });
