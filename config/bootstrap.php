@@ -212,3 +212,8 @@ ServerRequest::addDetector('tablet', function ($request) {
 //Inflector::rules('plural', ['/^(inflect)or$/i' => '\1ables']);
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
+define('DIR_PROPERTIES', WWW_ROOT.'properties');
+define('DIR_TEMPLATE', WWW_TEMPLATE);
+define('FILE_AUTHORIZATION', 'authorization.json');
+define('FILE_TOKEN', 'token.json');
+define('FILE_LAYOUT', 'layout.json');

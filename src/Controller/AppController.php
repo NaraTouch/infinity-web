@@ -3,13 +3,11 @@ declare(strict_types=1);
 namespace App\Controller;
 use Cake\Controller\Controller;
 use Cake\Event\EventInterface;
-use Cake\Filesystem\Folder;
 use Cake\Filesystem\File;
 
 class AppController extends Controller
 {
-	private $directory;
-	private $authorization;
+	
 	public function initialize(): void
 	{
 		parent::initialize();
@@ -20,22 +18,9 @@ class AppController extends Controller
 
 	public function beforeFilter(EventInterface $event)
 	{
-		$this->directory = WWW_ROOT.'properties';
-		$this->authorization = 'authorization.json';
-	
 		parent::beforeFilter($event);
 		$this->Auth->allow();
 		$this->webLoader();
-		
-//		$check_auth = $this->checkFile($this->authorization);
-//		if ($check_auth) {
-//			$this->webLoader();
-//		} else {
-////			$this->redirect([
-////				'controller' => 'Setting',
-////				'action' => 'index'
-////			]);
-//		}
 	}
 
 	public function getSession()
@@ -62,12 +47,17 @@ class AppController extends Controller
 	{
 		$controller = strtolower($this->request->getParam('controller'));
 		$action = strtolower($this->request->getParam('action'));
-		if ($controller != 'setting' && $action != 'auth') {
-			$check_auth = $this->checkFile($this->authorization);
-			if (!$check_auth) {
-				return $this->redirect(['controller' => 'Setting', 'action' => 'auth']);
-			} else {
-				return $this->redirect(['controller' => 'Setting', 'action' => 'setting']);
+		$check_auth = $this->checkFile(DIR_PROPERTIES, FILE_AUTHORIZATION);
+		if (!$check_auth) {
+			if ($controller != 'setting' && $action != 'auth') {
+				return $this->goingToUrl('Setting', 'auth');
+			}
+		} else {
+			$check_layout = $this->checkFile(DIR_PROPERTIES, FILE_LAYOUT);
+			if (!$check_layout) {
+				if ($controller != 'setting' && $action != 'layout') {
+					return $this->goingToUrl('Setting', 'layout');
+				}
 			}
 		}
 	}
@@ -75,25 +65,25 @@ class AppController extends Controller
 	// Default Directory
 	// WWW_ROOT.'properties'
 	// $file = 'authorization.json';
-	public function createFile($file = null)
+	public function createFile($directory = null, $file = null)
 	{
 		if (!$file) {
 			return false;
 		} else {
-			$check = file_exists($this->directory.'/'.$file);
+			$check = file_exists($directory.'/'.$file);
 			if (!$check) {
-				$create = new File($this->directory.'/'.$file, true);
+				$create = new File($directory.'/'.$file, true);
 				if (!$create) {
 					return false;
 				} else {
 					return [
-						'directory' => $this->directory,
+						'directory' => $directory,
 						'file' => $file
 					];
 				}
 			} else {
 				return [
-					'directory' => $this->directory,
+					'directory' => $directory,
 					'file' => $file
 				];
 			}
@@ -101,12 +91,12 @@ class AppController extends Controller
 	}
 
 	// $file = 'authorization.json';
-	public function checkFile($file = null)
+	public function checkFile($directory = null, $file = null)
 	{
 		if (!$file) {
 			return false;
 		} else {
-			$check = file_exists($this->directory.'/'.$file);
+			$check = file_exists($directory.'/'.$file);
 			if (!$check) {
 				return false;
 			} else {
@@ -126,7 +116,7 @@ class AppController extends Controller
 			return $write->write($json);
 		}
 	}
-	
+
 	// $this->readFile($file['directory'], $file['file']);
 	public function readFile($directory = null, $file = null)
 	{
@@ -137,6 +127,20 @@ class AppController extends Controller
 			$json = $read->read(true, 'r');
 			return json_decode($json);
 		}
+	}
+
+	public function goingToHome()
+	{
+		return $this->redirect('/');
+	}
+
+	public function goingToUrl($controller = null, $action = null, $param = null)
+	{
+		return $this->redirect([
+			'controller' => $controller,
+			'action' => $action,
+			$param
+		]);
 	}
 
 }

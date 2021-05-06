@@ -5,9 +5,12 @@ use Cake\Event\EventInterface;
 
 class ErrorController extends AppController
 {
+	
 	public function initialize(): void
 	{
-		$this->loadComponent('RequestHandler');
+		$this->loadComponent('RequestHandler', [
+			'enableBeforeRedirect' => false,
+		]);
 	}
 	public function beforeFilter(EventInterface $event)
 	{
@@ -15,10 +18,17 @@ class ErrorController extends AppController
 	public function beforeRender(EventInterface $event)
 	{
 		parent::beforeRender($event);
-
-		$this->viewBuilder()->setTemplatePath('Error');
+		$error = $this->response->getStatusCode();
+		if ($error != 200) {
+			return $this->redirect(['controller' => 'Error', 'action' => 'error404']);
+		}
 	}
 	public function afterFilter(EventInterface $event)
 	{
+	}
+
+	public function error404()
+	{
+		$this->viewBuilder()->disableAutoLayout();
 	}
 }
