@@ -28,8 +28,17 @@
 	</head>
 
 	<body>
+		<?= $this->Flash->render() ?>
+		<?= $this->element('component/menu'); ?>
 		<?= $this->fetch('content'); ?>
+		<?= $this->element('component/footer'); ?>
+		<!-- START: Page Background -->
+		<img class="nk-page-background-top" src="<?= $image_url.'images/bg-top.png'?>" alt="">
+		<img class="nk-page-background-bottom" src="<?= $image_url.'images/bg-bottom.png'?>" alt="">
+		<!-- END: Page Background -->
 	</body>
+	<?= $this->element('modal_search'); ?>
+	<?= $this->element('login'); ?>
 <?php
 	echo $this->Html->script([
 		'vendor/fontawesome-free/js/all',

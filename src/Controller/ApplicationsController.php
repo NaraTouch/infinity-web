@@ -20,10 +20,45 @@ class ApplicationsController extends AppController
 		} else {
 			$tag_link = strtolower($this->request->getUri()->getPath());
 			$layout = $this->readFile(DIR_PROPERTIES, FILE_LAYOUT);
-			if ($tag_link == '/') {
-				dump();
-				dump($tag_link);
+			$_layout = $this->layout($layout, $tag_link);
+			$_component = $this->component($_layout['component']);
+			$this->set([
+				'layout' => $_layout['data_layout'],
+				'component' => $_component,
+			]);
+		}
+	}
+
+	public function layout($layout = null, $tag_link = null)
+	{
+		$component = '';
+		if ($tag_link == '/') {
+			$component = $layout[0]->subpages[0]->name.'-'.$layout[0]->subpages[0]->tag_links;
+		} else {
+			$tag_link = explode('/', $tag_link);
+			foreach ($layout as $key => $value) {
+				foreach ($value->subpages as $k => $v) {
+					if ($v->tag_links == $tag_link['1']) {
+						$component = $v->name.'-'.$v->tag_links;
+					}
+				}
 			}
 		}
+		return [
+			'data_layout' => (array) $layout,
+			'component' => $component,
+		];
+	}
+	
+	public function component($file_name = null)
+	{
+		if (!$file_name) {
+			return [];
+		}
+		$component = $this->readFile(DIR_PROPERTIES, $file_name.'.json');
+		if ($component) {
+			$component = (array) $component;
+		}
+		return $component;
 	}
 }

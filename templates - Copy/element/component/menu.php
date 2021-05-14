@@ -1,8 +1,8 @@
 <?php
 $session = false;
-if ($this->request->getSession()->read('Auth.User')) :
+if ($this->request->getSession()->read('Auth.User')) {
 	$session = true;
-endif;
+}
 $image_url = $this->Url->build('/', ['escape' => false,'fullBase' => true,]);
 ?>
 <header class="nk-header nk-header-opaque">
@@ -45,37 +45,37 @@ $image_url = $this->Url->build('/', ['escape' => false,'fullBase' => true,]);
 					<img src="<?= $image_url.'images/logo.png'?>" alt="GoodGames" width="199">
 				</a>
 				<ul class="nk-nav nk-nav-right d-none d-lg-table-cell" data-nav-mobile="#nk-nav-mobile">
-					<?php foreach ($layout as $key => $value) :
-							if (!empty($value->subpages)) :
-								if (count($value->subpages) > 1) :
-					?>
-								<li class=" nk-drop-item">
-									<a><?= h($value->display);?></a>
-									<ul class="dropdown">
-										<?php foreach ($value->subpages as $k => $v) : ?>
-										<li>
-											<?= $this->Html->link(h($v->display), [
-												'controller' => $value->tag_links,
-												'action' => $v->tag_links
-											]); ?>
-										</li>
-										<?php endforeach; ?>
-									</ul>
-								</li>
-								<?php else :?>
-								<li>
-									<?php foreach ($value->subpages as $k => $v) :?>
-									<li>
-										<?= $this->Html->link(h($v->display), [
-											'controller' => $value->tag_links,
-											'action' => $v->tag_links
-										]); ?>
-									</li>
-									<?php endforeach; ?>
-								</li>
-								<?php endif; ?>
-					<?php endif; ?>
-					<?php endforeach; ?>
+					<li>
+						<?= $this->Html->link('Home', [
+							'controller' => 'Home',
+							'action' => 'index'
+						]); ?>
+					</li>
+					<li>
+						<?= $this->Html->link('News', [
+							'controller' => 'News',
+							'action' => 'blogs'
+						]); ?>
+					</li>
+					<li class=" nk-drop-item">
+						<a href="#">
+							Tournaments
+						</a>
+						<ul class="dropdown">
+							<li>
+								<?= $this->Html->link('Tournament', [
+									'controller' => 'Tournament',
+									'action' => 'tournament'
+								]); ?>
+							</li>
+							<li>
+								<?= $this->Html->link('Teams', [
+									'controller' => 'Tournament',
+									'action' => 'teams'
+								]); ?>
+							</li>
+						</ul>
+					</li>
 				</ul>
 				<ul class="nk-nav nk-nav-right nk-nav-icons">
 					<li class="single-icon d-lg-none">
@@ -96,7 +96,7 @@ $image_url = $this->Url->build('/', ['escape' => false,'fullBase' => true,]);
 <div id="nk-nav-mobile" class="nk-navbar nk-navbar-side nk-navbar-right-side nk-navbar-overlay-content d-lg-none">
 	<div class="nano">
 		<div class="nano-content">
-			<a href="<?php echo $this->Url->build('/', ['escape' => false,'fullBase' => true,]); ?>" class="nk-nav-logo">
+			<a href="index.html" class="nk-nav-logo">
 				<img src="<?= $image_url.'images/logo.png'?>" alt="" width="120">
 			</a>
 			<div class="nk-navbar-mobile-content">
