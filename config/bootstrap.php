@@ -213,7 +213,12 @@ ServerRequest::addDetector('tablet', function ($request) {
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 define('DIR_PROPERTIES', WWW_ROOT.'properties');
-define('DIR_TEMPLATE', WWW_TEMPLATE);
+define('DIR_TEMPLATE', WWW_TEMPLATE.'Applications');
+define('DIR_LAYOUT', WWW_TEMPLATE.'layout');
+define('DIR_ELEMENT', WWW_TEMPLATE.'element');
 define('FILE_AUTHORIZATION', 'authorization.json');
 define('FILE_TOKEN', 'token.json');
 define('FILE_LAYOUT', 'layout.json');
+define('FILE_APP', 'app.php');
+define('FILE_DEFAULT', 'default.php');
+define('FILE_MENU', 'menu.php');

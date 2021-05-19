@@ -61,11 +61,20 @@ class SettingController extends AppController
 					$token = $get_token->token;
 					if ($this->request->is('get')) {
 						$layout = $this->Setting->weblayouts($token);
-						if ($layout) {
+						$app = $this->Setting->webApplication($token);
+						if ($layout && $app) {
 							$layout = json_decode($layout, true);
-							if ($layout['ErrorCode'] == 200) {
+							$app = json_decode($app, true);
+							if ($layout['ErrorCode'] == 200 && $app['ErrorCode'] == 200) {
 								$layouts = $layout['Data'];
 								$this->writeMenuFile($layouts);
+								$script = $app['Data']['0']['script'];
+								$layout = $app['Data']['0']['layout'];
+								$menu = $app['Data']['0']['menu'];
+								$this->writeAppFile($script, FILE_APP, DIR_TEMPLATE);
+								$this->writeAppFile($layout, FILE_DEFAULT, DIR_LAYOUT);
+								$this->writeAppFile($menu, FILE_MENU, DIR_ELEMENT);
+								
 							} else {
 								return $this->goingToUrl('Setting', 'auth');
 							}
@@ -90,6 +99,24 @@ class SettingController extends AppController
 		}
 		
 	}
+	
+	public function writeAppFile($json = null ,$file_name = null, $dir = null)
+	{
+		if (!$json || !$file_name || !$dir) {
+			return false;
+		}
+		if ($this->checkFile($dir, $file_name)) {
+			return $this->writeFile($dir, $file_name, $json);
+		} else {
+			$create_file = $this->createFile($dir, $file_name);
+			if ($create_file) {
+				return $this->writeFile($dir, $file_name, $json);
+			} else {
+				return false;
+			}
+		}
+	}
+
 	// $json most be in json
 	// example $file = 'authorization.json';
 	public function writeSettingFile($json = null ,$file_name = null)
@@ -129,7 +156,7 @@ class SettingController extends AppController
 						'code' => $v['code'],
 					];
 					if (!empty($v['layouts'])) {
-						$this->writeComponentFile($v['layouts'], $v['name'], $v['tag_links']);
+						$this->writeComponentFile($v['layouts'], $value['name'], $v['tag_links']);
 					}
 				}
 			}

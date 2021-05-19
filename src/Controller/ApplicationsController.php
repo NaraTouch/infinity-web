@@ -33,23 +33,21 @@ class ApplicationsController extends AppController
 	{
 		$component = '';
 		if ($tag_link == '/') {
-			$component = $layout[0]->subpages[0]->name.'-'.$layout[0]->subpages[0]->tag_links;
+			$component = $layout[0]->name.'-'.$layout[0]->subpages[0]->tag_links;
 		} else {
-			$tag_link = explode('/', $tag_link);
-			foreach ($layout as $key => $value) {
-				foreach ($value->subpages as $k => $v) {
-					if ($v->tag_links == $tag_link['1']) {
-						$component = $v->name.'-'.$v->tag_links;
-					}
-				}
+			$link = explode('/', $tag_link);
+			foreach($link as $ar => $av) {
+				if(empty($av))
+					unset($link[$ar]);
 			}
+			$component = $this->componentFileName($link, $layout);
 		}
 		return [
 			'data_layout' => (array) $layout,
 			'component' => $component,
 		];
 	}
-	
+
 	public function component($file_name = null)
 	{
 		if (!$file_name) {
@@ -58,6 +56,43 @@ class ApplicationsController extends AppController
 		$component = $this->readFile(DIR_PROPERTIES, $file_name.'.json');
 		if ($component) {
 			$component = (array) $component;
+		}
+		return $component;
+	}
+
+	public function componentFileName($link = null, $layout = null)
+	{
+		$count = count($link);
+		$component = '';
+		switch (strtolower($count)) {
+			case 1:
+				foreach ($layout as $key => $value) {
+					$component = $layout[0]->name.'-'.$layout[0]->subpages[0]->tag_links;
+				}
+				break;
+			case 2:
+				foreach ($layout as $key => $value) {
+					if ($value->tag_links == $link[1]) {
+						if (!empty($value->subpages)) {
+							$subpage = $value->subpages;
+							foreach ($subpage as $k => $sub) {
+								if ($sub->tag_links == $link[2]) {
+									$component = $value->name.'-'.$sub->tag_links;
+								}
+							}
+						}
+					}
+				}
+				break;
+			case 3:
+					dump($link);
+					//start with search data 
+					// example url : http://localhost/infinity-web/home/about/test-test
+					// test-test with become key search.
+				break;
+			default :
+				$component = 'not found';
+				break;
 		}
 		return $component;
 	}
