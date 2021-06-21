@@ -9,6 +9,7 @@ class ApplicationsController extends AppController
 		$this->loadComponent('Setting');
 		$this->loadComponent('User');
 		$this->loadComponent('Auth');
+		$this->loadComponent('FrontEnd');
 		$this->loadComponent('Flash');
 	}
 
@@ -22,9 +23,11 @@ class ApplicationsController extends AppController
 			$layout = $this->readFile(DIR_PROPERTIES, FILE_LAYOUT);
 			$_layout = $this->layout($layout, $tag_link);
 			$_component = $this->component($_layout['component']);
+			$_component_data = $this->componentData($_component);
 			$this->set([
 				'layout' => $_layout['data_layout'],
 				'component' => $_component,
+				'component_data' => $_component_data,
 			]);
 		}
 	}
@@ -58,6 +61,26 @@ class ApplicationsController extends AppController
 			$component = (array) $component;
 		}
 		return $component;
+	}
+
+	public function componentData($components = [])
+	{
+		if (empty($components)) {
+			return [];
+		}
+		$auth_file = explode('.', FILE_AUTHORIZATION);
+		$website = $this->component($auth_file['0']);
+		$component_data = [];
+		$request_data = [];
+		foreach ($components as $key => $value) {
+			$request_data = [
+				'code' => $website['code'],
+				'REQUEST_DATA' => $value->table_name
+			];
+			$response = $this->FrontEnd->getComponentData($request_data);
+			$component_data[$value->table_name] = $response;
+		}
+		return $component_data;
 	}
 
 	public function componentFileName($link = null, $layout = null)
