@@ -62,10 +62,20 @@ class SettingController extends AppController
 					if ($this->request->is('get')) {
 						$layout = $this->Setting->weblayouts($token);
 						$app = $this->Setting->webApplication($token);
-						if ($layout && $app) {
+						$component = $this->Setting->componentScripts($token);
+						if (
+							$layout &&
+							$app &&
+							$component
+							) {
 							$layout = json_decode($layout, true);
 							$app = json_decode($app, true);
-							if ($layout['ErrorCode'] == 200 && $app['ErrorCode'] == 200) {
+							$component = json_decode($component, true);
+							if (
+								$layout['ErrorCode'] == 200 &&
+								$app['ErrorCode'] == 200 &&
+								$component['ErrorCode'] == 200
+							) {
 								$layouts = $layout['Data'];
 								$this->writeMenuFile($layouts);
 								$script = $app['Data']['0']['script'];
@@ -74,7 +84,7 @@ class SettingController extends AppController
 								$this->writeAppFile($script, FILE_APP, DIR_TEMPLATE);
 								$this->writeAppFile($layout, FILE_DEFAULT, DIR_LAYOUT);
 								$this->writeAppFile($menu, FILE_MENU, DIR_ELEMENT);
-								
+								$this->writeComponentView($component['Data']);
 							} else {
 								return $this->goingToUrl('Setting', 'auth');
 							}
@@ -164,7 +174,7 @@ class SettingController extends AppController
 		return $this->writeSettingFile(json_encode($layout), FILE_LAYOUT);
 	}
 
-	public function  writeComponentFile($data = null, $name = null, $tag_links = null)
+	public function writeComponentFile($data = null, $name = null, $tag_links = null)
 	{
 		$file_name = $name.'-'.$tag_links.'.json';
 		$component= [];
@@ -183,7 +193,7 @@ class SettingController extends AppController
 		$token['token'] = $data['token'];
 		return $this->writeSettingFile(json_encode($token), FILE_TOKEN);
 	}
-	
+
 	public function writeAuthFile($data = null)
 	{
 		$auth = [
@@ -193,5 +203,22 @@ class SettingController extends AppController
 			'code' => $data['code'],
 		];
 		return $this->writeSettingFile(json_encode($auth), FILE_AUTHORIZATION);
+	}
+	
+	public function writeComponentView($data = [])
+	{
+		if (!empty($data)) {
+			foreach ($data as $key => $value) {
+				$script = '';
+				$component_name = $value['component']['table_name'].'.php';
+				if (!empty($value['component'])) {
+					if (isset($value['component']['script'])) {
+						$script = $value['component']['script'];
+					}
+				}
+				$this->writeAppFile($script, $component_name, DIR_COMPONENT);
+			}
+		}
+		return true;
 	}
 }

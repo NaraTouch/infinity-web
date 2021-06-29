@@ -7,7 +7,7 @@
 				?>
 					<div class="nk-image-slider-item">
 						<?php
-							if ($value->image) :
+							if (isset($value->image)) :
 						?>
 							<img src="<?= ($value->image) ? $value->image : '';?>"
 							 alt="<?= ($value->display) ? $value->display : '';?>"

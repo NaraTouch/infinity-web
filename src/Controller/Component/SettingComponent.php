@@ -33,6 +33,13 @@ class SettingComponent extends Component
 		return $this->openUrlWithToken($url, $http_method, $token);
 	}
 
+	public function componentScripts($token = null)
+	{
+		$url = $this->api_url.'/websites/component-scripts';
+		$http_method = 'POST';
+		return $this->openUrlWithToken($url, $http_method, $token);
+	}
+
 	private function openUrlWithToken($url = null, $http_method = null, $token = null, $request = [])
 	{
 		if (!$url) {

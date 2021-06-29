@@ -216,6 +216,7 @@ define('DIR_PROPERTIES', WWW_ROOT.'properties');
 define('DIR_TEMPLATE', WWW_TEMPLATE.'Applications');
 define('DIR_LAYOUT', WWW_TEMPLATE.'layout');
 define('DIR_ELEMENT', WWW_TEMPLATE.'element');
+define('DIR_COMPONENT', WWW_TEMPLATE.'element/component');
 define('FILE_AUTHORIZATION', 'authorization.json');
 define('FILE_TOKEN', 'token.json');
 define('FILE_LAYOUT', 'layout.json');
