@@ -275,10 +275,15 @@ class FilesController extends AppController
 			$validate = $this->Validation->validateListing($data);
 			unset($data['secret_key']);
 			if (empty($validate)) {
-				$path = DIR_UPLOAD.$data['path'];
+				$str_path = str_replace("\\","",$data['path']);
+				$path_no_domain = $str_path;
+				$path = DIR_UPLOAD;
+				if ($str_path) {
+					$path = DIR_UPLOAD.'\\'.$str_path;
+				}
 				$check = $this->checkDirectory($path);
 				if ($check) {
-					$info_list = $this->listingAll($path);
+					$info_list = $this->listingAll($path, $path_no_domain);
 					$http_code = 200;
 					$message = 'success';
 					$response = $this->Response->Response($http_code, $message, $info_list, null);
@@ -298,28 +303,32 @@ class FilesController extends AppController
 			->withStringBody(json_encode($response));
 	}
 
-	public function listingAll($path = null)
+	public function listingAll($path = null, $path_no_domain = null)
 	{
 		$arr_listing = array_diff(scandir($path), ['.', '..']);
 		if (!empty($arr_listing)) {
-			$data = [];
+			$directory = [];
 			foreach($arr_listing as $key => $value) {
-				$dir_path = $path.$value;
+				$dir_path = $path.'\\'.$value;
 				if (is_dir($dir_path)) {
-					$data[$value] = [
+					$directory[$value] = [
 						'type' => 'folder',
 						'info' => [],
 					];
 				} else {
 					$info = $this->getFileInfo($dir_path);
-					$data[$value] = [
-						'type' => 'file',
+					$info['dirname'] = $path;
+					$directory[$value] = [
+						'type' => $info['type'],
 						'info' => $info,
 					];
 				}
-				
 			}
-			return $data;
+			return [
+				'path' => '\\'.$path_no_domain,
+				'full_path' => $path,
+				'directory' => $directory,
+			];
 		}
 		return [];
 	}
@@ -329,6 +338,9 @@ class FilesController extends AppController
 		$file = new File($path_file);
 		$info = $file->info();
 		if ($info) {
+			$extension = $info['extension'];
+			$type = $this->getFileType($extension);
+			$info['type'] = $type;
 			return $info;
 		}
 		return [];
@@ -338,5 +350,13 @@ class FilesController extends AppController
 	{
 		if (!is_readable($dir)) return null; 
 		return (count(scandir($dir)) == 2);
+	}
+	
+	public function getFileType($extension = null)
+	{
+		if (in_array(strtolower($extension), IMAGE_EXTENTION)) {
+			return 'image';
+		}
+		return 'document';
 	}
 }
