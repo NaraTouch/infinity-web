@@ -276,10 +276,17 @@ class FilesController extends AppController
 			unset($data['secret_key']);
 			if (empty($validate)) {
 				$path = DIR_UPLOAD.$data['path'];
-				$info_list = $this->listingAll($path);
-				$http_code = 200;
-				$message = 'success';
-				$response = $this->Response->Response($http_code, $message, $info_list, null);
+				$check = $this->checkDirectory($path);
+				if ($check) {
+					$info_list = $this->listingAll($path);
+					$http_code = 200;
+					$message = 'success';
+					$response = $this->Response->Response($http_code, $message, $info_list, null);
+				} else {
+					$http_code = 200;
+					$message = 'Directory not exist';
+					$response = $this->Response->Response($http_code, $message, $data, null);
+				}
 			} else {
 				$http_code = 201;
 				$message = 'Delete Failed!!!';
@@ -293,7 +300,7 @@ class FilesController extends AppController
 
 	public function listingAll($path = null)
 	{
-		$arr_listing = array_diff(scandir($path), array('.', '..'));
+		$arr_listing = array_diff(scandir($path), ['.', '..']);
 		if (!empty($arr_listing)) {
 			$data = [];
 			foreach($arr_listing as $key => $value) {

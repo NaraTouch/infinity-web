@@ -7,11 +7,12 @@ class ValidationComponent extends Component
 {
 
 	private $validator;
-
+	private $secret_key;
 	public function initialize(array $config): void
 	{
 		parent::initialize($config);
 		$this->validator = new Validator();
+		$this->secret_key = 'Nara@12345678';
 	}
 
 	// Rename Folder
@@ -20,7 +21,17 @@ class ValidationComponent extends Component
 
 		$this->validator
 			->requirePresence('secret_key')
-			->notEmptyString('secret_key');
+			->notEmptyString('secret_key')
+			->add('secret_key', 'custom', [
+				'rule' => function($value) {
+					if ($value !== $this->secret_key) {
+						return false;
+					} else {
+						return true;
+					}
+				},
+				'message' => MESSAGE_INVALIDE_SECRET_KEY,
+			]);
 
 		$this->validator
 			->requirePresence('path')
@@ -46,7 +57,17 @@ class ValidationComponent extends Component
 
 		$this->validator
 			->requirePresence('secret_key')
-			->notEmptyString('secret_key');
+			->notEmptyString('secret_key')
+			->add('secret_key', 'custom', [
+				'rule' => function($value) {
+					if ($value !== $this->secret_key) {
+						return false;
+					} else {
+						return true;
+					}
+				},
+				'message' => MESSAGE_INVALIDE_SECRET_KEY,
+			]);
 
 		$this->validator
 			->requirePresence('path_name')
@@ -86,7 +107,17 @@ class ValidationComponent extends Component
 
 		$this->validator
 			->requirePresence('secret_key')
-			->notEmptyString('secret_key');
+			->notEmptyString('secret_key')
+			->add('secret_key', 'custom', [
+				'rule' => function($value) {
+					if ($value !== $this->secret_key) {
+						return false;
+					} else {
+						return true;
+					}
+				},
+				'message' => MESSAGE_INVALIDE_SECRET_KEY,
+			]);
 
 		$this->validator
 			->requirePresence('path')
@@ -111,7 +142,17 @@ class ValidationComponent extends Component
 
 		$this->validator
 			->requirePresence('secret_key')
-			->notEmptyString('secret_key');
+			->notEmptyString('secret_key')
+			->add('secret_key', 'custom', [
+				'rule' => function($value) {
+					if ($value !== $this->secret_key) {
+						return false;
+					} else {
+						return true;
+					}
+				},
+				'message' => MESSAGE_INVALIDE_SECRET_KEY,
+			]);
 
 		$this->validator
 			->requirePresence('path')
@@ -136,7 +177,17 @@ class ValidationComponent extends Component
 
 		$this->validator
 			->requirePresence('secret_key')
-			->notEmptyString('secret_key');
+			->notEmptyString('secret_key')
+			->add('secret_key', 'custom', [
+				'rule' => function($value) {
+					if ($value !== $this->secret_key) {
+						return false;
+					} else {
+						return true;
+					}
+				},
+				'message' => MESSAGE_INVALIDE_SECRET_KEY,
+			]);
 	
 		$this->validator
 			->requirePresence('name')
@@ -169,7 +220,17 @@ class ValidationComponent extends Component
 
 		$this->validator
 			->requirePresence('secret_key')
-			->notEmptyString('secret_key');
+			->notEmptyString('secret_key')
+			->add('secret_key', 'custom', [
+				'rule' => function($value) {
+					if ($value !== $this->secret_key) {
+						return false;
+					} else {
+						return true;
+					}
+				},
+				'message' => MESSAGE_INVALIDE_SECRET_KEY,
+			]);
 	
 		$this->validator
 			->requirePresence('name')
@@ -198,7 +259,17 @@ class ValidationComponent extends Component
 
 		$this->validator
 			->requirePresence('secret_key')
-			->notEmptyString('secret_key');
+			->notEmptyString('secret_key')
+			->add('secret_key', 'custom', [
+				'rule' => function($value) {
+					if ($value !== $this->secret_key) {
+						return false;
+					} else {
+						return true;
+					}
+				},
+				'message' => MESSAGE_INVALIDE_SECRET_KEY,
+			]);
 	
 		$this->validator
 			->requirePresence('file')

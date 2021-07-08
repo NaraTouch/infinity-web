@@ -103,5 +103,6 @@ define('MESSAGE_REQUIRED', ' is required.');
 define('MESSAGE_SUCCESS', ' is success.');
 define('IMAGE_EXTENTION', ['gif', 'png', 'jpg', 'jpeg']);
 define('MESSAGE_INVALIDE_FILE', 'Your file is not allowed.');
+define('MESSAGE_INVALIDE_SECRET_KEY', 'Invalid secret key.');
 define('MESSAGE_INVALIDE_DIR', 'Invalid Directory name (musted start with back slash)');
 define('MESSAGE_INVALIDE_DIRECTTORY', 'Your file is not allowed to upload here.');
