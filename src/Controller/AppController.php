@@ -3,6 +3,7 @@ declare(strict_types=1);
 namespace App\Controller;
 use Cake\Controller\Controller;
 use Cake\Event\EventInterface;
+use Cake\Filesystem\Folder;
 use Cake\Filesystem\File;
 
 class AppController extends Controller
@@ -126,6 +127,36 @@ class AppController extends Controller
 			$read = new File($directory.'/'.$file, true);
 			$json = $read->read(true, 'r');
 			return json_decode($json);
+		}
+	}
+
+	// $file = 'authorization.json';
+	public function checkDirectory($directory = null)
+	{
+		if (!$directory) {
+			return false;
+		} else {
+			$check = file_exists($directory);
+			if (!$check) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+	}
+
+	// $file = 'authorization.json';
+	public function createDirectory($directory = null)
+	{
+		if (!$directory) {
+			return false;
+		} else {
+			$create = new Folder($directory, true);
+			if (!$create) {
+				return false;
+			} else {
+				return true;
+			}
 		}
 	}
 

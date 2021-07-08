@@ -19,9 +19,9 @@ class ErrorController extends AppController
 	{
 		parent::beforeRender($event);
 		$error = $this->response->getStatusCode();
-		if ($error != 200) {
-			return $this->redirect(['controller' => 'Error', 'action' => 'error404']);
-		}
+//		if ($error != 200) {
+//			return $this->redirect(['controller' => 'Error', 'action' => 'error404']);
+//		}
 	}
 	public function afterFilter(EventInterface $event)
 	{
