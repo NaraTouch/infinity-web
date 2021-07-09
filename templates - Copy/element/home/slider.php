@@ -1,4 +1,5 @@
-<div class="nk-image-slider" data-autoplay="8000">
+<div class="nk-image-slider"
+		<div class="nk-image-slider-content"> data-autoplay="8000">
 	<div class="nk-image-slider-item">
 		<img src="images/slide-1.jpg" alt="" class="nk-image-slider-img" data-thumb="images/slide-1-thumb.jpg">
 		<div class="nk-image-slider-content">

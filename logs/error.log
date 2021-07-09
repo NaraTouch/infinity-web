@@ -41155,3 +41155,704 @@ Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
 Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
 [main] - ROOT\webroot\index.php, line 40
 
+2021-07-09 04:58:38 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 04:58:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 04:58:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 04:58:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 04:59:14 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 04:59:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 04:59:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 04:59:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:18 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:43 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:52 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:20:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:22:47 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:22:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:22:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:22:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:22:59 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:22:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:22:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:22:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:23:29 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:23:29 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:23:29 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:23:29 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:23:47 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:23:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:23:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:23:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:24:20 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Error\Debugger.php line=970 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:24:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Error\Debugger.php:970) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:24:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Error\Debugger.php:970) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:24:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Error\Debugger.php:970) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:24:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:24:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:24:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:24:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:12 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:24 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:34 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:50 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:25:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:26:36 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php line=176 in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:26:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:26:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 05:26:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\infinity-web\vendor\symfony\var-dumper\Dumper\AbstractDumper.php:176) in [C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /files/listing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2021-07-09 08:57:08 Error: [ParseError] syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\infinity-web\templates\element\component\GGMainSliders.php on line 20
+Stack Trace:
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\View\View.php:1134
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\View\View.php:1668
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\View\View.php:655
+- C:\xampp\htdocs\infinity-web\templates\Applications\app.php:11
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\View\View.php:1176
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\View\View.php:1134
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\View\View.php:764
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Controller\Controller.php:699
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Controller\Controller.php:540
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:151
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\BaseApplication.php:313
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\infinity-web\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\infinity-web\webroot\index.php:40
+
+Request URL: /
+
+

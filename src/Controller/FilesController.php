@@ -275,13 +275,18 @@ class FilesController extends AppController
 			$validate = $this->Validation->validateListing($data);
 			unset($data['secret_key']);
 			if (empty($validate)) {
-				$str_path = str_replace("\\","",$data['path']);
-				$path_no_domain = $str_path;
-				$path = DIR_UPLOAD;
-				if ($str_path) {
-					$path = DIR_UPLOAD.'\\'.$str_path;
-				}
+//				dump($data['path']);
+//				$str_path = str_replace("\\","",$data['path']);
+//				dump($str_path);
+				$path_no_domain = $data['path'];
+//				$path = DIR_UPLOAD;
+//				if ($str_path) {
+//					$path = DIR_UPLOAD.'\\'.$str_path;
+//				}
+				$path = DIR_UPLOAD.$data['path'];
 				$check = $this->checkDirectory($path);
+//				dump(DIR_UPLOAD);
+//				dump($path);
 				if ($check) {
 					$info_list = $this->listingAll($path, $path_no_domain);
 					$http_code = 200;
@@ -325,12 +330,15 @@ class FilesController extends AppController
 				}
 			}
 			return [
-				'path' => '\\'.$path_no_domain,
+				'path' => $path_no_domain,
 				'full_path' => $path,
 				'directory' => $directory,
 			];
 		}
-		return [];
+		return [
+			'path' => $path_no_domain,
+			'full_path' => $path
+		];
 	}
 	
 	public function getFileInfo($path_file = null)
